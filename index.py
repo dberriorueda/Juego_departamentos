@@ -14,8 +14,6 @@ intentos = 3
 
 departamentosLista = list(departamentos.items())
 
-respuesta_correcta = lambda respuesta, capital: capital.lower() == respuesta.lower()
-
 while intentos > 0:
     departamento, capital = random.choice(departamentosLista)
     
