@@ -14,6 +14,8 @@ intentos = 3
 
 departamentosLista = list(departamentos.items())
 
+respuesta_correcta = lambda respuesta, capital: capital.lower() == respuesta.lower()
+
 while intentos > 0:
     departamento, capital = random.choice(departamentosLista)
     
@@ -26,7 +28,7 @@ while intentos > 0:
         print(f'{numero}, {cap}')
     print(f'{len(opciones) + 1}, Salir')
 
-    respuesta = input('Cual es la capital ? (Ingresa 6 para salir): ')
+    respuesta = input('Cual es la capital ? : ')
 
     if respuesta == '6':
         break
